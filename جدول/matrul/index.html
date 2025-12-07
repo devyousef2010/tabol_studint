@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>جدول الحصص</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>جدول الحصص الأسبوعي</h1>
+
+  <div class="input-container">
+    <input type="text" id="day" placeholder="اليوم">
+    <input type="text" id="subject" placeholder="المادة">
+    <input type="text" id="teacher" placeholder="مستر">
+    <input type="text" id="time" placeholder="الموعد (مثلاً 8:00 - 9:00)">
+    <button onclick="addRow()">➕ إضافة</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>اليوم</th>
+        <th>المادة</th>
+        <th>مستر</th>
+        <th>الموعد</th>
+      </tr>
+    </thead>
+    <tbody id="scheduleBody">
+      <!-- الصفوف هتضاف هنا تلقائي -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>

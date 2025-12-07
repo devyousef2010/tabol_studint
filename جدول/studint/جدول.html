@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration Form</title>
+        <link    rel="stylesheet"         href="جدول.css">  
+</head>
+<body>
+<h1>Student Registration Form</h1>
+
+<div class="form-container">
+  <input type="text" id="studentName" placeholder="Name">
+  <input type="text" id="studentPhone" placeholder="Phone Number">
+
+  <button onclick="addStudent()">Register</button>
+  <button onclick="calculateAttendance()">Calculate Attendance</button>
+</div>
+
+
+<table id="studentsTable">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>الاسم</th>
+      <th>الدور</th>
+      <th>Present</th>
+      <th>Absent</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Students will appear here -->
+  </tbody>
+</table>
+
+<div id="resultBox" class="result-box"></div>
+  <script src="جدول.js"></script>
+</body>
+</html>
